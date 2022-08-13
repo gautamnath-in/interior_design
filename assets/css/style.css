@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../bg.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Montserrat',
+        sans-serif;
+    padding: 40px 70px 0;
+    height: 134vh;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+navbar {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    /* align-items: center; */
+}
+
+.main-menu li,
+.contact-us {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-us {
+    position: relative;
+    justify-self: flex-end;
+}
+
+.contact-us::before {
+    background: url('../InteriorDesignlandingpage.svg') no-repeat;
+    content: '';
+    height: 35px;
+    width: 33px;
+    position: absolute;
+    left: -45px;
+    background-position: -268px -44px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.border-wrap {
+    border-bottom: 2px solid;
+    display: grid;
+    grid-template-columns: 3.3fr 1fr;
+    /* align-items: center; */
+}
+
+/* __________________container______________ */
+.container {
+    display: flex;
+    padding: 0 40px;
+}
+
+.header,
+.componets {
+    height: 64vh;
+}
+
+.headers {
+    flex: 1.5;
+}
+
+.componets {
+    flex: .5;
+}
+
+.container h1 {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    font-size: 66px;
+    height: 100%;
+}
+
+button {
+    padding: 18px 44px;
+    background: transparent;
+    font-size: 30px;
+    color: #fff;
+    border: 3px solid;
+    border-radius: 42px;
+    cursor: pointer;
+}
+
+.componets>div {
+    background: #ffffff30;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.componet-one .place-holder {
+    background: url('../InteriorDesignlandingpage.svg') no-repeat;
+    content: '';
+    height: 50px;
+    width: 100px;
+    background-position: 0px -30px;
+    margin-bottom: 16px;
+}
+
+.componet-two .place-holder {
+    background: url('../InteriorDesignlandingpage.svg') no-repeat;
+    content: '';
+    height: 50px;
+    width: 100px;
+    background-position: -134px -36px;
+    margin-bottom: 16px;
+}
+
+.componet-one {
+    position: relative;
+    top: 20%;
+    right: -8%
+}
+
+.componet-two {
+    position: relative;
+    top: 66.5%;
+    left: -80%;
+}
+
+.componet-one:after {
+    content: '';
+    background-color: #fffc;
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    top: 100%;
+    right: 27%;
+}
+
+.componet-one::before {
+    content: '';
+    background-color: #fffc;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(100% + 70px);
+    right: 23.5%;
+    border-radius: 10px;
+}
+
+.componet-two:after {
+    content: '';
+    background-color: #fffc;
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    right: -35px;
+    top: 16%;
+    transform: rotate(90deg);
+}
+
+.componet-two::before {
+    content: '';
+    background-color: #fffc;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -90px;
+    top: 29%;
+    border-radius: 10px;
+}
