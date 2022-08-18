@@ -177,3 +177,60 @@ button {
     top: 29%;
     border-radius: 10px;
 }
+
+@media (max-width:991px) {
+
+    body,
+    .container {
+        padding: 20px 10px 0;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    navbar,
+    .border-wrap,
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+    }
+
+    .border-wrap {
+        flex-direction: row;
+    }
+
+    navbar>div,
+    .border-wrap>div {
+        margin-bottom: 20px;
+        flex: 1;
+        font-size: 14px;
+        align-items: end;
+    }
+
+    .main-menu li {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+        height: auto;
+    }
+
+    button {
+        padding: 10px 14px;
+        background: transparent;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .headers {
+        flex: 1;
+    }
+
+    .componets {
+        height: auto;
+    }
+}
